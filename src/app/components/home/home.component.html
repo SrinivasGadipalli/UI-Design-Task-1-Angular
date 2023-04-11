@@ -1,0 +1,153 @@
+<div id="homeContainer">
+  <!-- Carousel Section -->
+  <h1 class="homeHeading">
+    <span>❝</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque
+    <span>❠</span>
+  </h1>
+  <div class="imgSection">
+    <div></div>
+    <div class="arrows">
+      <a> <fa-icon [icon]="leftIcon"></fa-icon> </a>
+      <a> <fa-icon [icon]="rightIcon"></fa-icon> </a>
+      <!-- <a class="leftArrow"> <fa-icon [icon]="locationArrow"></fa-icon> </a> -->
+    </div>
+    <div class="imgBottomSection">
+      <div class="radioInput">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="descriptionSection">
+        <h3>Slide <span style="font-size: 26px">1</span> Caption</h3>
+        <p>
+          Dapiensociis temper donec auctortortis cumsan et curabitur condis
+          lorem lobottis leo. Ipsumcommodo libero nunc at in velis.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flower Section - I -->
+  <div class="flowerSection">
+    <div class="first">
+      <div class="flowerImg">
+        <img
+          src="https://ediblebloglive.wpengine.com/wp-content/uploads/2020/09/Alstroemerias-min-300x214.jpg"
+          alt="Alstroemeria"
+        />
+      </div>
+      <div class="flowerDesc">
+        <h1 class="flowerHead">Lorum ipsum dolor</h1>
+        <p class="flowerPara">
+          Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet
+          met praesenean et iaculum. Metridiculis conseque quis iaculum aen ean
+          nunc aenean quis nam nis.
+        </p>
+      </div>
+    </div>
+    <div class="middle">
+      <div class="flowerImg">
+        <img
+          src="https://ediblebloglive.wpengine.com/wp-content/uploads/2020/09/Calla-Lilies-min-420x420.jpg"
+          alt="Alstroemeria"
+        />
+      </div>
+      <div class="flowerDesc">
+        <h1 class="flowerHead">Lorum ipsum dolor</h1>
+        <p class="flowerPara">
+          Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet
+          met praesenean et iaculum. Metridiculis conseque quis iaculum aen ean
+          nunc aenean quis nam nis
+        </p>
+      </div>
+    </div>
+    <div class="last">
+      <div class="flowerImg">
+        <img
+          src="https://ediblebloglive.wpengine.com/wp-content/uploads/2020/09/Gardenia-min-300x200.jpg"
+          alt="Alstroemeria"
+        />
+      </div>
+      <div class="flowerDesc">
+        <h1 class="flowerHead">Lorum ipsum dolor</h1>
+        <p class="flowerPara">
+          Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet
+          met praesenean et iaculum. Metridiculis conseque quis iaculum aen ean
+          nunc aenean quis nam nis
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flower Section - II -->
+
+  <div class="flowerSection2">
+    <ul>
+      <li class="flowerCard" *ngFor="let flower of flowerList">
+        <img [src]="flower.imgUrl" [alt]="flower.name" />
+        <div class="flower2desc">
+          <h1>{{ flower.name }}</h1>
+          <p>{{ flower.desc }}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Flower Footer Section  -->
+
+  <div class="footer">
+    <div class="contact">
+      <h1>CONTACT DETAILS</h1>
+      <div class="contactDesc">
+        <span style="padding-bottom: 8px; font-size: 17px;"
+          >Convallisijusto vestas mus pellentum aenean sapibulum in aliquam
+          volut pat integest nulla.
+        </span>
+        <span>Tel: 9876543210</span>
+        <span>Fax: lka984dd657854</span>
+        <span>Email: contact@mydomain.com</span>
+      </div>
+    </div>
+    <div class="quickLinks">
+      <h1>QUICK LINKS</h1>
+      <div class="links">
+        <span>FaceBook</span>
+        <span>Whatsapp</span>
+        <span>LinkedIn</span>
+        <span>Twitter</span>
+      </div>
+    </div>
+    <div class="blog">
+      <h1>FROM THE BLOG</h1>
+      <div class="blogDesc">
+        <p>Blog Post Title</p>
+        <span style="display: block; padding-bottom: 9px;">Post by Admin on 1900 88 338</span>
+        <span
+          >Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean
+          elit intesque sed facilispede estibulum</span
+        >
+        <a>Read More <fa-icon [icon]="doublerightIcon"></fa-icon></a>
+      </div>
+    </div>
+    <div class="newsletter">
+      <h1>GRAB OUR NEWSLETTER</h1>
+      <div class="form">
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Email" />
+        <button>SUBMIT</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright Section  -->
+  <div class="copyRightSection">
+    <h1>
+      Copyright <fa-icon [icon]="copyIcon"> </fa-icon> 2023 - All Rights
+      Reserved - Domain Name
+    </h1>
+    <h1>Template by OS Templates</h1>
+  </div>
+</div>

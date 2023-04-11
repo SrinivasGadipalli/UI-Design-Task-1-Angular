@@ -1,0 +1,321 @@
+#homeContainer {
+  background-color: rgb(238, 233, 233);
+  min-height: 100vh;
+
+  .homeHeading {
+    text-align: center;
+    padding: 2% 16%;
+    opacity: 0.6;
+    font-weight: normal;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: black;
+
+    span {
+      font-size: 1.7rem;
+    }
+  }
+
+  .imgSection {
+    // background-image: url("https://img.freepik.com/free-photo/blossom-floral-bouquet-decoration-colorful-beautiful-flowers-background-garden-flowers-plant-pattern-wallpapers-greeting-cards-postcards-design-wedding-invites_90220-1103.jpg?w=1380&t=st=1681112036~exp=1681112636~hmac=d81324adf871e85fef30d2e72520bbf643cdc31488189a0fcdac31403189bc3b");
+    // background-image: url('https://img.freepik.com/free-vector/roses-bloom_53876-89175.jpg?w=900&t=st=1681112420~exp=1681113020~hmac=bb9c4e0e25af3dc8f03b874787c0677be752efaddb2bdf1b23603b1ab8e56e33');
+    background-image: url("https://img.freepik.com/free-vector/beautiful-watercolour-bouquet-flowers_52683-45189.jpg?w=996&t=st=1681112500~exp=1681113100~hmac=bb53a5321db053404bbc53721c03f3f0e592c45204fdf54bcd6189f0a1d21c0c");
+    background-size: cover;
+    object-fit: cover;
+    height: 600px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .arrows {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10%;
+
+      .leftArrow {
+        transform: rotate(43deg);
+
+        fa-icon {
+          color: orange;
+          transform: scale(2, 5);
+        }
+      }
+
+      a {
+        margin: 0 3.4%;
+        font-size: 2.8rem;
+        background-color: #000;
+        border-radius: 100rem;
+        padding: 10px 20px;
+        border: 3px solid gray;
+        color: gray;
+        cursor: pointer;
+      }
+    }
+
+    .imgBottomSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .radioInput {
+        display: flex;
+        padding-left: 3.8%;
+        padding-bottom: 1.8%;
+        gap: 10px;
+
+        span {
+          border: 3px solid gray;
+          border-radius: 100rem;
+          padding: 4px;
+          height: 15px;
+          width: 15px;
+          background-color: gray;
+        }
+        span:nth-child(5) {
+          background-color: white;
+        }
+      }
+
+      .descriptionSection {
+        background-color: #000;
+        height: 178px;
+        width: 47%;
+        color: lightgray;
+        padding: 1rem;
+        font-weight: lighter !important;
+        font-family: "Times New Roman", Times, serif;
+
+        h3 {
+          font-size: 1.9rem;
+          padding: 15px 0 25px;
+          opacity: 0.8;
+        }
+
+        p {
+          opacity: 0.8;
+          width: 97%;
+          font-size: 1.5rem;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+
+  .flowerSection {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: white;
+    gap: 18px;
+
+    .first,
+    .middle,
+    .last {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      width: 30%;
+      padding: 14px;
+      height: 250px;
+      font-family: "Cambria", "Cochin", Georgia, Times, "Times New Roman", serif;
+      transition: 0.8s;
+
+      .flowerImg {
+        img {
+          height: 62px;
+          width: 58px;
+          margin-top: 10px;
+        }
+      }
+
+      .flowerDesc {
+        width: 260px;
+
+        h1 {
+          color: rgb(202, 119, 202);
+          font-size: 1.8rem;
+          padding-bottom: 18px;
+        }
+
+        p {
+          font-size: 1.2rem;
+          letter-spacing: -0.60px;
+        }
+      }
+    }
+  }
+
+  .flowerSection2 {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin: 55px 0;
+      gap: 20px;
+    }
+
+    .flowerCard {
+      list-style-type: none;
+      background-color: white;
+      height: 330px;
+      width: 350px;
+      transition: 0.8s;
+
+      img {
+        padding: 15px 15px 0 15px;
+        height: 180px;
+        width: 350px;
+      }
+
+      .flower2desc {
+        text-align: center;
+        padding: 10px;
+        font-family: "Cambria", "Cochin", Georgia, Times, "Times New Roman",
+          serif;
+
+        h1 {
+          padding: 10px 0 18px;
+          color: blueviolet;
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          padding: 0px 10px;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: white;
+    height: 340px;
+    padding: 28px 2.4%;
+    font-family: monospace !important;
+
+    div {
+      width: 33%;
+      color: gray;
+
+      h1 {
+        padding: 20px 0 30px;
+        font-size: 25px;
+        font-weight: lighter;
+      }
+    }
+
+    .contact {
+      .contactDesc {
+        display: flex;
+        flex-direction: column;
+        width: 322px;
+        font-size: 18px;
+        line-height: 1.5;
+        letter-spacing: -0.4px;
+      }
+    }
+
+    .quickLinks {
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        width: 90%;
+
+        span {
+          font-size: 18px;
+          padding-bottom: 8px;
+          border-bottom: 1px solid gray;
+          transition: 0.6s;
+        }
+      }
+    }
+
+    .blog {
+      .blogDesc {
+        width: 90%;
+        line-height: 1.3;
+
+        p {
+          font-size: 1.3rem;
+          font-weight: bold;
+          padding-bottom: 2px;
+        }
+        span {
+          font-size: 1.1rem;
+          letter-spacing: -0.5px;
+        }
+        a {
+          font-size: 20px;
+          display: block;
+          text-align: right;
+          color: rgb(148, 73, 148);
+          font-weight: 500;
+          padding: 10px 0;
+          cursor: pointer;
+          display: flex;
+          justify-content: flex-end;
+          gap: 7px;
+          align-items: center;
+
+          fa-icon {
+            font-size: 10px;
+            padding-top: 6px;
+          }
+        }
+      }
+    }
+
+    .newsletter {
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 92%;
+        font-family: serif;
+
+        input {
+          font-size: 1rem;
+          height: 40px;
+          border-radius: 7px;
+          outline: none;
+          border: none;
+          background-color: rgb(231, 229, 229);
+          padding: 10px;
+        }
+
+        button {
+          width: 36%;
+          padding: 6px 10px;
+          font-size: 1.3rem;
+          color: purple;
+          border-radius: 4px;
+          outline: none;
+          border: 0;
+          background-color: lightgray;
+          font-family: monospace !important;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .copyRightSection {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(49, 47, 47);
+    color: lightgray;
+    font-weight: lighter;
+    padding: 40px 4%;
+    font-size: 0.55rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+}

@@ -1,0 +1,115 @@
+#navBar {
+  background-color: white;
+
+  .nav-color {
+    background-color: purple;
+    height: 15px;
+  }
+
+  .navSection {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      padding: 2.2rem 0 3rem 2.2rem;
+
+      .navHeading {
+        font-size: 2.6rem;
+        color: darkslategray;
+        font-family: "Times New Roman", Times, serif;
+        padding-left: 7px;
+        padding-bottom: 0;
+        font-weight: 500;
+
+        span {
+          font-size: 3rem;
+        }
+      }
+
+      .navPara {
+        color: gray;
+        padding-left: 5px;
+        font-family: monospace;
+        font-size: 18px;
+        opacity: 0.8;
+        padding-top: -5px;
+        line-height: 0.7;
+      }
+    }
+
+    .navDesc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-right: 4%;
+
+      .inputSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: lightgray;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        overflow: hidden;
+        padding: 7px 10px;
+
+        input {
+          height: 28px;
+          width: 280px;
+          border: none;
+          outline: none;
+          padding: 0 14px;
+          background-color: transparent;
+          font-size: 1.2rem;
+        }
+
+        .navSearchIcon {
+          background-color: #fff;
+          border-radius: 100rem;
+          padding: 4px 5px;
+          font-weight: bolder;
+          color: purple;
+        }
+
+        small {
+          cursor: pointer;
+        }
+      }
+
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 53px;
+
+        li {
+          list-style-type: none;
+          font-size: 1.3rem;
+          font-family: monospace !important;
+          color: gray;
+
+          a {
+            font-weight: lighter;
+          }
+        }
+
+        li:nth-child(1) {
+          color: black;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        li:hover {
+          color: black;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+
+      .navMenuSection {
+        padding-bottom: 48px;
+      }
+    }
+  }
+}
